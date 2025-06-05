@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background-dots {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.floating-dot {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #368F8B;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: simpleFloat 20s linear infinite;
+}
+
+@keyframes simpleFloat {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+    25% {
+        transform: translateY(-30px) translateX(20px);
+    }
+    50% {
+        transform: translateY(-10px) translateX(-15px);
+    }
+    75% {
+        transform: translateY(-40px) translateX(10px);
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.profile-default,
+.profile-wink {
+    border-radius: 50%;
+    border: 2x solid #368F8B;
+    box-shadow: 0 8px 32px rgba(54, 143, 139, 0.3);
+    transition: opacity 0.01s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.profile-default {
+    position: relative;
+}
+
+.profile-wink {
+    opacity: 0;
+}
+
+.profile-container:hover .profile-default {
+    opacity: 0;
+}
+
+.profile-container:hover .profile-wink {
+    opacity: 1;
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+header p {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #b0b0b0;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #368F8B;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #368F8B;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #aaa;
+} 

@@ -1,0 +1,16 @@
+Hi there, welcome to my portfolio!
+
+Im Sebatian Perez, System Engineer student from Colombia.
+
+I love building things to make my (and others) life easier.
+
+Experience:
+Background studying Phisics.
+Worked in Konecta, Callcenter for Iberia Airlines.
+All mi projects in github, working on Edunari
+
+Currently Learning / Working on:
+Remembering why I opened that terminal
+Stop referring to bugs as Features
+Using println("WHY?!") as a valid debugging method
+Doing git commit -m "fix" and letting the universe interpret my intent
